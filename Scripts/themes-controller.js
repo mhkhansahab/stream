@@ -17,13 +17,15 @@ function switchToAqua(){
     icons.item(3).style.color = "#FFFFFF";
    
     document.body.style.background = "#caf0f8";
-    collapser[0].style.background = "##023e8a";
+    collapser[0].style.background = "#023e8a";
     leftNav[0].style.background = "#03045e";
     rightNav[0].style.background = "#0096c7";
     addBtn.style.background = "#03045e";
     message.style.color = "	#000000";
     try{
-        tile[0].style.background = "#0096c7";
+        for(i = 0; i < tile.length; i++){
+            tile[i].style.background = "#0096c7";
+        }
     }catch{}
     
 }
@@ -44,7 +46,9 @@ function switchToDark(){
     addBtn.style.background = "#18191a";
     message.style.color = "#FFFFFF";
     try{
-        tile[0].style.background = "#3a3b3c";
+        for(i = 0; i < tile.length; i++){
+            tile[i].style.background = "#3a3b3c";
+        }
     }catch{}
 }
 function switchToLight(){
@@ -64,6 +68,8 @@ function switchToLight(){
     addBtn.style.background = "#1877f2";
     message.style.color = "#1877f2";
     try{
-        tile[0].style.background = "#1877f2";
+        for(i = 0; i < tile.length; i++){
+            tile[i].style.background = "#1877f2";
+        }
     }catch{}
 }
