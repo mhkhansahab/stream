@@ -154,7 +154,7 @@ arrow.addEventListener("click", ()=>{
 
 const menu = document.getElementById("menu");
 menu.addEventListener("click",()=>{
-    if(drawer.style.display === "none" ){
+    if(drawer.style.display === "none" || drawer.style.display === ""){
         drawer.style.display = "block";
     }
     else{

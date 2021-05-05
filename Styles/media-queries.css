@@ -21,7 +21,7 @@
         width: 100%;
     }
     .playlist > ul > li{
-        margin-left: 0px;
+        margin: auto 0px;
     }
     .tile-content{
         max-width: 60%;
