@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css"
+        integrity="sha256-46r060N2LrChLLb5zowXQ72/iKKNiw/lAmygmHExk/o=" crossorigin="anonymous" />
+        <link rel="stylesheet" href="normalize.css">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="./Styles/left-nav.css">
+        <link rel="stylesheet" href="./Styles/right-nav.css">
+        <link rel="stylesheet" href="./Styles/list-styles.css">
+        <link rel="stylesheet" href="./Styles/media-queries.css">
+       
+    <title>Playlist</title>
+</head>
+<body>
+    <div>
+        <div class="navbar">
+            <span id="menu"><i class="fas fa-bars"></i></span>
+            <ul class="main-li">
+                <li><span id="logo">Stream</span></li>
+                <li><span><i class="fas fa-chevron-right arrow"></i></span></li>
+            </ul>
+            <ul class="drawer-li">
+                <li><input type="text" placeholder="Enter Name" id="name"></li>
+                <li><input type="text" placeholder="Enter URL" id="url"></li>
+                <li><span id="icon-container" onclick="addVideo()"><i class="fas fa-plus "></i></span></li>
+            </ul>
+            
+        </div>
+        <div id="message">No Video Available</div>
+        <div class="content-container">
+            <iframe 
+                width="836" height="441" 
+                src="https://www.youtube.com/embed/y4vn_il8JQE" 
+                title="YouTube video player" frameborder="0" allow="accelerometer; 
+                autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                id="my-iframe"
+                allowfullscreen>
+            </iframe>
+            <div class="playlist">
+                <div class="collapser"><span>My Playlist</span><i class="fas fa-chevron-right" id="playlist-arrow"></i></div>
+                <ul id="list">
+                </ul>
+            </div>
+        </div>
+        <div class="theme-div">
+            <span id="aqua" onclick="switchToAqua()">Aqua</span>
+            <span id="dark" onclick="switchToDark()">Dark</span>
+            <span id="light" onclick="switchToLight()">Light</span>
+        </div>
+    </div>
+
+    <script src="./app.js"></script>
+    <script src="./Scripts/themes-controller.js"></script>
+</body>
+</html>
+

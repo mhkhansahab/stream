@@ -1,0 +1,71 @@
+@font-face {
+    font-family: Monserrat-Regular;
+    src: url("./Fonts/Montserrat-Regular.ttf");
+}
+@font-face {
+    font-family: MontserratSubrayada-Bold;
+    src: url("./Fonts/MontserratSubrayada-Bold.ttf");
+}
+
+body{
+    background-color: #caf0f8;
+}
+body::-webkit-scrollbar{
+    width: 10px;
+    background-color:  #0096c7;
+}
+*{
+    font-family: Monserrat-Regular;
+}
+ul, .content-container{
+    display: flex;
+    justify-content: space-evenly;
+    overflow: hidden;
+}
+.content-container{
+    flex-direction: row;
+    margin: 10px;
+}
+.navbar{
+    display: flex;
+    position: relative;
+}
+ul{
+    width: 100%;
+    padding: 0;
+    list-style: none;
+}
+
+.content-container{
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+#message{
+    margin-top: 100px;
+    width: 100%;
+    font-size: 30px;
+    text-align: center;
+    display: none;
+}
+
+.theme-div{
+    width: 100%;
+    position: fixed;
+    bottom: 10px;
+    text-align: center;
+    cursor: pointer;
+}
+.theme-div > span{
+    padding: 10px 30px;
+    color: white;
+}
+#aqua{
+    background-color: #023e8a;
+}
+#dark{
+    background-color: black;
+}
+#light{
+    background-color: white;
+    color: black;
+}

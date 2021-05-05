@@ -1,0 +1,87 @@
+#list{
+    height: 100%;
+    list-style: none;
+    display: block;
+    overflow-y: auto;
+    max-height: 360px;
+    transition: ease .6s height;
+}
+.playlist{
+    width: 400px;
+    margin-left: 10px;
+}
+.playlist > ul > li{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    color: white;
+    padding: 10px 80px 10px 10px;
+    background-color: #0096c7;
+    position: relative;
+    margin: auto 5px;
+}
+.playlist > ul > li:not(:last-child){
+    margin-bottom: 5px;
+}
+.delete-btn{
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    cursor: pointer;
+}
+.play-btn{
+    margin-left: 10px;
+}
+
+.playlist > ul::-webkit-scrollbar{
+    width: 0px;
+}
+
+.thumbnail{
+    width: 120px;
+}
+.tile-content{
+    cursor: pointer;
+    margin-left: 10px;
+    max-width: 50%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.collapser{
+    position: relative;
+    background-color: #023e8a;
+    height: 60px;
+}
+.collapser > span{
+    color: white;
+    font-size: 30px;
+    position: absolute;
+    bottom: 10px;
+    left: 20px;
+}
+#playlist-arrow{
+    color: white;
+    position: absolute;
+    right: 40px;
+    bottom: 20px;
+    transform: rotate(-90deg);
+    cursor: pointer;
+}
+
+@keyframes upward {
+    from{
+        transform: rotate(90deg);
+    }
+    to{
+        transform: rotate(-90deg);
+    }
+}
+@keyframes downward {
+    from{
+        transform: rotate(-90deg);
+    }
+    to{
+        transform: rotate(90deg);
+    }
+}

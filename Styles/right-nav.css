@@ -1,0 +1,28 @@
+.drawer-li{
+    display: flex;
+    background-color: #0096c7;
+    align-items: center;
+    justify-content: flex-start;
+    transition: width 1s;
+    flex-direction: row;
+    width: 0%;
+    padding: 10px 0px;
+}
+.drawer-li > li{
+    margin-left: 10px;
+}
+input{
+    border: none;
+    border-radius: 2px;
+    padding: 10px;
+}
+input:focus{
+    outline: none;
+}
+#icon-container{
+    padding: 10px 40px;
+    background-color: #03045e;
+    color: white;
+    cursor: pointer;
+    border-radius: 2px;
+}
