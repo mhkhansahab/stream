@@ -128,7 +128,7 @@ function deleteVideo(e){
 
 function changeVideo(e){
     const iFrame = document.getElementById("my-iframe");
-    const index = e.getAttribute("index");
+    const index = e.nextSibling.getAttribute("index");
     let playlist = window.localStorage.getItem("playlist");
     list = JSON.parse(playlist);
     const url = new URL(list[index].url);
@@ -165,7 +165,6 @@ menu.addEventListener("click",()=>{
 const playlistCollapser = document.getElementById("playlist-arrow");
 const playlistList = document.getElementById("list");
 playlistCollapser.addEventListener("click",()=>{
-    console.log(playlistList.style.height);
     if(playlistList.style.height === "100%" || playlistList.style.height === ""){
         playlistList.style.height = "0px";
         playlistCollapser.style.animation = "forwards downward 1s";
